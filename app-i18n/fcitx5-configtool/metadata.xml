@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>david.alpha.fox@gmail.com</email>
+		<name>David Gao</name>
+	</maintainer>
+	<use>
+		<flag name="kcm">Enable KDE KCM support</flag>
+		<flag name="config-qt">Enable fcitx5-config-qt</flag>
+		<flag name="test">Enable Test</flag>
+	</use>
+</pkgmetadata>
