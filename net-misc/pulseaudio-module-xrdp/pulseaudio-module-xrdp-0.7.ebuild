@@ -24,7 +24,10 @@ RDEPEND="
 	net-misc/xrdp:0=
 	>=media-sound/pulseaudio-${PULSE_VER}
 "
-
+DEPEND="
+	dev-libs/check
+	dev-libs/doxygen
+	dev-util/meson"
 src_prepare() {
 	eapply_user
 
