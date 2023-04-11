@@ -28,9 +28,11 @@ RDEPEND="
 src_prepare() {
 	eapply_user
 
-	./bootstrap
-	cd ../pulseaudio-${PULSE_VER} || die
-	./configure
+    sed -i '\#-I $(PULSE_DIR)/src#a -I $(PULSE_DIR)/build \\' src/Makefile.am
+    ./bootstrap
+    cd ../pulseaudio-${PULSE_VER} || die
+    meson build
+
 }
 
 src_configure() {
