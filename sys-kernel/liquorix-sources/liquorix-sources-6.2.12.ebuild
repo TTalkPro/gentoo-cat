@@ -22,6 +22,7 @@ K_SECURITY_UNSUPPORTED="1"
 # already included in liquorix-sources
 K_WANT_GENPATCHES="extras"
 
+
 IUSE=""
 
 DEPEND="
@@ -38,6 +39,7 @@ SRC_URI="
 	${KERNEL_BASE_URI}/linux-${KV_MAJOR}.${KV_MINOR}.tar.xz
 	${GENPATCHES_URI}
 	https://github.com/zen-kernel/zen-kernel/releases/download/v${PV}-lqx1/v${PV}-lqx1.patch.xz"
+
 KEYWORDS="~amd64"
 
 S="${WORKDIR}/linux-${PV}-liquorix"
