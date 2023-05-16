@@ -6,7 +6,7 @@ EAPI=7
 inherit cmake gnome2-utils xdg-utils
 
 SRC_URI="https://download.fcitx-im.org/fcitx5/libime/libime-${PV}_dict.tar.xz"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 DESCRIPTION="Fcitx5 Next generation of fcitx "
 HOMEPAGE="https://fcitx-im.org/ https://gitlab.com/fcitx/libime"
 

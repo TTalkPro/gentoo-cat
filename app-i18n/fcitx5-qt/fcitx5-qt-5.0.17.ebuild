@@ -7,7 +7,7 @@ inherit cmake
 
 
 SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5-qt/fcitx5-qt-${PV}.tar.xz"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 DESCRIPTION="Qt library and IM module for fcitx5"
 HOMEPAGE="https://github.com/fcitx/fcitx5-qt"

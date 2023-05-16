@@ -7,7 +7,7 @@ inherit cmake xdg
 
 
 SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5-lua/fcitx5-lua-${PV}.tar.xz"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 
 DESCRIPTION="Addons related to Chinese, including IME previous bundled inside fcitx4."

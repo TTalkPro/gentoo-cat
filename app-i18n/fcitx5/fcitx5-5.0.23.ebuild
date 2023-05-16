@@ -7,7 +7,7 @@ inherit cmake xdg
 
 SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5/fcitx5-${PV}_dict.tar.xz"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 DESCRIPTION="Fcitx5 Next generation of fcitx "
 HOMEPAGE="https://fcitx-im.org/ https://github.com/fcitx/fcitx5"
 

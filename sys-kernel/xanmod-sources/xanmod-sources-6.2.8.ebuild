@@ -14,7 +14,7 @@ detect_version
 DESCRIPTION="Full XanMod source, including the Gentoo patchset and other patch options."
 HOMEPAGE="https://xanmod.org"
 LICENSE+=" CDDL"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 
 IUSE=""

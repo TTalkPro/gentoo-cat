@@ -6,7 +6,7 @@ EAPI=7
 inherit cmake
 
 SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5-configtool/fcitx5-configtool-${PV}.tar.xz"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 DESCRIPTION="Configuration module for Fcitx"
 HOMEPAGE="https://fcitx-im.org/ https://github.com/fcitx/fcitx5-configtool"
 

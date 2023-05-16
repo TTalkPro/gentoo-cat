@@ -11,7 +11,7 @@ SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5-table-extra/fcitx5-table-ex
 
 LICENSE="GPL-2+"
 SLOT="5"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 DEPEND="
 	app-i18n/fcitx5

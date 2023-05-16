@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/fcitx/fcitx5-rime"
 
 
 SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5-rime/fcitx5-rime-${PV}.tar.xz"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 LICENSE="GPL-2"
 SLOT="5"

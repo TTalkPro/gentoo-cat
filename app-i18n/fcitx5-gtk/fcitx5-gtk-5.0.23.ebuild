@@ -7,7 +7,7 @@ inherit cmake gnome2-utils xdg
 
 
 SRC_URI="https://download.fcitx-im.org/fcitx5/fcitx5-gtk/fcitx5-gtk-${PV}.tar.xz"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 DESCRIPTION="Gtk im module for fcitx5 and glib based dbus client library"
 HOMEPAGE="https://github.com/fcitx/fcitx5-gtk"
