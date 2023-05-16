@@ -40,7 +40,7 @@ SRC_URI="
 	${GENPATCHES_URI}
 	https://github.com/zen-kernel/zen-kernel/releases/download/v${PV}-lqx1/v${PV}-lqx1.patch.xz"
 
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 
 S="${WORKDIR}/linux-${PV}-liquorix"
 

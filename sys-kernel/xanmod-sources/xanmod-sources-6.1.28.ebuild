@@ -4,7 +4,7 @@
 EAPI="8"
 K_WANT_GENPATCHES="base extras"
 #Note: to bump xanmod, check K_GENPATCHES_VER in sys-kernel/gentoo-sources
-K_GENPATCHES_VER="14"
+K_GENPATCHES_VER="33"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 ETYPE="sources"
@@ -15,6 +15,7 @@ DESCRIPTION="Full XanMod source, including the Gentoo patchset and other patch o
 HOMEPAGE="https://xanmod.org"
 LICENSE+=" CDDL"
 KEYWORDS="amd64"
+
 
 IUSE=""
 XANMOD_VERSION="1"
@@ -39,6 +40,8 @@ src_unpack() {
 	for i in $(dir "${WORKDIR}"/genpatches/*.patch); do
 		UNIPATCH_LIST+=" ${i}"
 	done
+
+
 	UNIPATCH_LIST+=" ${DISTDIR}/patch-${OKV}${XANMOD_VERSION}.xz"
 	unipatch "${UNIPATCH_LIST}"
 	unpack_fix_install_path
