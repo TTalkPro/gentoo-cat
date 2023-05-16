@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/linuxmint/slick-greeter"
 
 
 SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 S="${WORKDIR}/${PN//lightdm-}-${PV}"
 
 LICENSE="GPL-3"
