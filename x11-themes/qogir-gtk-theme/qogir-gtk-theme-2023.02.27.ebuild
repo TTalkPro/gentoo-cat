@@ -33,6 +33,7 @@ src_prepare() {
 }
 
 src_install() {
+	mkdir -p "${D}/usr/share/themes"
 	"${S}"/install.sh -d "${D}/usr/share/themes"
 }
 
