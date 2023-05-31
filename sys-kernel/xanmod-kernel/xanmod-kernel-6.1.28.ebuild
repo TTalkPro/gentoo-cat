@@ -25,8 +25,7 @@ KEYWORDS="amd64"
 IUSE="clang debug +x86-64-v1 x86-64-v2 x86-64-v3 x86-64-v4"
 REQUIRED_USE="^^ ( x86-64-v1 x86-64-v2 x86-64-v3 x86-64-v4 )"
 
-#PDEPEND="
-#	>=virtual/dist-kernel-${PV}"
+PDEPEND="virtual/linux-sources"
 BDEPEND="
         sys-devel/bc
         sys-devel/flex
