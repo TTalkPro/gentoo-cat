@@ -7,8 +7,8 @@ inherit toolchain-funcs
 
 DESCRIPTION="A programming language based on R6RS"
 HOMEPAGE="https://github.com/racket/ChezScheme"
-SRC_URI="https://github.com/racket/ChezScheme/releases/download/racket-v${PV}/${PN}-v${PV}.tar.gz"
-S="${WORKDIR}/${PN}-v${PV}"
+SRC_URI="https://github.com/racket/ChezScheme/releases/download/racket-v${PV}/chez-scheme-racket-v${PV}.tar.gz"
+S="${WORKDIR}/chez-scheme-racket-v${PV}"
 # Chez Scheme itself is Apache 2.0, but it vendors Nanopass and stex
 # which are both MIT licensed.
 LICENSE="Apache-2.0 MIT"
