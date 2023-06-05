@@ -32,10 +32,10 @@ RDEPEND="
 src_prepare() {
 	tc-export AR CC CXX LD RANLIB
 	default
-	#if use ncurses ; then
-	#	local nclibs="\"$($(tc-getPKG_CONFIG) --libs ncurses)\""
-	#	sed -i "s|ncursesLib=-lncurses|ncursesLib=${nclibs}|g" configure || die
-	#fi
+	if use ncurses ; then
+		local nclibs="\"$($(tc-getPKG_CONFIG) --libs ncurses)\""
+		sed -i "s|ncursesLib=-lncurses|ncursesLib=${nclibs}|g" configure || die
+	fi
 
 	# Remove -Werror
 	#sed -i "/^C = /s|-Werror||g" c/Mf-* || die
@@ -46,10 +46,11 @@ src_configure() {
 		$(usex threads '--threads' '--nothreads')
 		$(usex ncurses '' '--disable-curses')
 		$(usex X '' '--disable-x11')
+		--temproot="${D}"
 		--installprefix="/usr/local"
 		--installbin="/usr/local/bin"
 		--installlib="/usr/local/$(get_libdir)"
-		--installman="/usr/loacl/share/man"
+		--installman="/usr/local/share/man"
 		--libkernel
 		--nogzip-man-pages
 		LZ4=$($(tc-getPKG_CONFIG) --libs liblz4)
@@ -60,7 +61,7 @@ src_configure() {
 
 src_install() {
 	# TempRoot == DESTDIR
-	emake TempRoot="${D}" install
+	emake TempRoot=${D} install
 	einstalldocs
 
 	#find "${ED}"/usr/$(get_libdir)/csv${PV//a}/examples \
